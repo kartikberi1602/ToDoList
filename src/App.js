@@ -187,7 +187,7 @@ function App() {
                       <p>{item.description}</p>
                     </div>
 
-                    <div>
+                    <div className='iconBox'>
                       <AiOutlineDelete
                         className="icon"
                         onClick={() => handleDeleteTodo(item.id)}
@@ -216,7 +216,7 @@ function App() {
                   <p><small>Completed on: {item.completedOn}</small></p>
                 </div>
 
-                <div>
+                <div className='iconBox'>
                   <AiOutlineDelete
                     className="icon"
                     onClick={() => handleDeleteTodo(item.id)}

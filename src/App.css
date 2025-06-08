@@ -1,94 +1,106 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 .App {
-    background: #1f1e1e;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  background: #1f1e1e;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
 h1.page-title {
-    margin: 0;
-    font-size: 56px;
-    color: #fff;
+  margin: 0;
+  font-size: 56px;
+  color: #fff;
 }
+
 .todo-container {
-    background: #353434;
-    padding: 2%;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-    max-height: 80vh;
-    overflow-y: auto;
-    box-shadow: 0px 5px 7px rgb(27, 27, 27);
+  background: #353434;
+  padding: 2%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 5px 7px rgb(27, 27, 27);
 }
+
 .input_flex {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-       align-items: end;
-           border-bottom: 1px solid rgb(78, 78, 78);
-    padding-bottom: 25px;
-    margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 1px solid rgb(78, 78, 78);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
+
 .input_box {
-    display: flex;
-    flex-direction: column;
-    
-}
-label.input_label {
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-}
-.input_box input {
-    padding: 8px;
-    border: none;
-    width: 250px;
-    margin-top: 10px;
-}
-.input_box input:focus-visible{
-    outline: none;
-}
-button.handleSubmit {
-    background-color: rgb(0, 230, 122);
-    color: white;
-    border: none;
-    border-radius: 0px;
-    /* margin-top: 25px; */
-    padding: 8px;
-    width: 60px;
-    cursor: pointer;
-    font-weight: bold;
-    max-height: 31px;
-}
-.tab_button{
-     background-color: rgb(71, 71, 71);
-  color: white;
-  border:none;
-  border-radius: 0px;
-  padding: 10px;
-  cursor: pointer;
-}
-.active{
-    background-color:  rgb(0,230,122);
-}
-.todo-list{
   display: flex;
   flex-direction: column;
 
 }
 
-.btn-area{
+label.input_label {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.input_box input {
+  padding: 8px;
+  border: none;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.input_box input:focus-visible {
+  outline: none;
+}
+
+button.handleSubmit {
+  background-color: rgb(0, 230, 122);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  /* margin-top: 25px; */
+  padding: 8px;
+  width: 60px;
+  cursor: pointer;
+  font-weight: bold;
+  max-height: 31px;
+}
+
+.tab_button {
+  background-color: rgb(71, 71, 71);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(0, 230, 122);
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.btn-area {
   margin-bottom: 15px;
 }
 
-.todo-list-item{
+.todo-list-item {
   background-color: #414040;
   display: flex;
   justify-content: space-between;
@@ -100,79 +112,142 @@ button.handleSubmit {
   box-shadow: 0px 3px 5px rgb(43, 42, 42);
 }
 
-.todo-list-item h3{
+.todo-list-item h3 {
   font-size: 25px;
-  color: rgb(0,230,122);
+  color: rgb(0, 230, 122);
   font-weight: bold;
   margin: 0;
 }
 
-.todo-list-item p{
+.todo-list-item p {
   font-size: 14px;
   color: rgb(161, 161, 161);
   margin-top: 8px;
 }
 
-.icon{
+.icon {
   font-size: 35px;
   cursor: pointer;
 }
 
-.icon:hover{
+.icon:hover {
   color: red;
 }
 
-.check-icon{
+.check-icon {
   font-size: 25px;
   margin-left: 10px;
-  color:rgb(0,230,122);
+  color: rgb(0, 230, 122);
   cursor: pointer;
 }
 
-.check-icon:hover{
+.check-icon:hover {
   color: rgb(4, 196, 106);
 }
 
-.edit__wrapper{
+.edit__wrapper {
   background-color: #414040;
   padding: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.edit__wrapper input,.edit__wrapper textarea{
+.edit__wrapper input,
+.edit__wrapper textarea {
   border: 1px solid lightgray;
   padding: 10px;
   margin: 5px;
   border-radius: 3px;
 }
 
-.edit__wrapper .primaryBtn{
+.edit__wrapper .primaryBtn {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   font-size: 16px;
-  width:fit-content;
+  width: fit-content;
 }
+
 .header {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header h3 {
+  font-size: 20px;
+  color: #ffff;
+  margin: 0;
+}
+
+button.logutBtn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #dd0b0b87;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  h1.page-title {
+    font-size: 36px;
+  }
+
+  .App {
+    padding-top: 60px;
+    justify-content: start;
+  }
+
+  .todo-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4% 20px;
+    width: 75%;
+  }
+
+  .input_flex {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  .input_box {
+    width: 100%;
+    overflow: hidden;
+}
+.todo-list-item h3 {
+    font-size: 20px;
+}
+.todo-list-item {
+    flex-direction: column;
+    align-items: self-start;
+}
+.iconBox {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: flex-end;
+    width: 100%;
+}
+.icon {
+    font-size: 28px;
 }
 .header h3 {
-    font-size: 20px;
+    font-size: 15px;
     color: #ffff;
     margin: 0;
 }
 button.logutBtn {
-    background: transparent;
     border: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: #dd0b0b87;
-    border-bottom: 1px solid;
-    cursor: pointer;
+    font-size: 14px;
+}
+.header {
+    gap: 20px;
+    width: 90%;
+    left: 20px;
+    justify-content: space-between;
+}
 }

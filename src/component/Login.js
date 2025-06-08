@@ -31,7 +31,7 @@ const LoginModal = ({ onClose }) => {
         <h2 className="modal-title">Login to Continue</h2>
 
    
-        <div className="divider">or</div>
+        {/* <div className="divider">or</div> */}
 
         <button className="google-login-btn" onClick={handleGoogleLogin}>
           <img
